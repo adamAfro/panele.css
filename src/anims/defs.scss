@@ -1,0 +1,41 @@
+@keyframes fadein {
+
+  from { opacity: 0 }
+  to { opacity: 1 }
+}
+
+@keyframes popin {
+
+  from { transform: scale(0); opacity: 0 }
+  70% { transform: scale(1.1); opacity: 1 }
+  to { transform: scale(1) }
+}
+
+@keyframes rislide {
+
+  from { transform: translateX(100vw) }
+  to { transform: translateX(0) }
+}
+
+@keyframes lislide {
+
+  from { transform: translateX(-100vw) }
+  to { transform: translateX(0) }
+}
+
+@keyframes dislide {
+
+  from { transform: translateY(-100vh) }
+  to { transform: translateY(0) }
+}
+
+@keyframes upslide {
+
+  from { transform: translateY(100vh) }
+  to { transform: translateY(0) }
+}
+
+@keyframes rotate {
+
+  to { transform: rotate(360deg);}
+}

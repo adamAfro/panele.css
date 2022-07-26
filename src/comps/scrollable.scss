@@ -1,0 +1,34 @@
+@use "./pallete";
+
+%scrollable {
+
+  > * { 
+
+    flex-shrink: 0;
+    scroll-snap-align: center;
+  }
+}
+
+.slider {
+
+  @extend %scrollable;
+
+  display: flex; flex-flow: row nowrap;
+  width: 100%; overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+
+  border-left: solid pallete.$adjective;
+  border-right: solid pallete.$adjective;
+}
+
+.scroller {
+
+  @extend %scrollable;
+
+  display: flex; flex-flow: column nowrap;
+  height: 100%; overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+
+  border-top: solid pallete.$adjective;
+  border-bottom: solid pallete.$adjective;
+}

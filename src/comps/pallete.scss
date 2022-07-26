@@ -1,0 +1,67 @@
+$theme: #ff8429;
+$theme-attr: "%23ff8429";
+
+$adjective: #fc4700;
+$adjective-attr: "%23fc4700";
+
+$accent: #450000;
+$accent-attr: "%23450000";
+
+.light {
+
+  background-color: $theme;
+  color: $accent;
+}
+
+.dark {
+
+  background-color: $accent;
+  color: $theme;
+}
+
+@mixin contrast($context: "dark", $type: "background", $clickable: false) {
+
+  @if ($context == "dark") {
+
+    @if ($type == "background") {
+
+      color: $accent; background-color: $theme;
+      @if ($clickable) {
+        &:active {
+          color: $theme; background-color: $adjective;
+        }
+      }
+
+    } @else if ($type == "color") {
+      
+      fill: $theme; color: $theme;
+      @if ($clickable) {
+        &:active {
+          fill: $adjective; color: $adjective;
+        }
+      }
+    }
+
+  } @else if ($context == "light") {
+
+    @if ($type == "background") {
+
+      color: $theme; background-color: $accent;
+      @if ($clickable) {
+        &:active {
+          color: $accent; background-color: $adjective;
+        }
+      }
+
+    } @else if ($type == "color") {
+
+      fill: $accent; color: $accent;
+      @if ($clickable) {
+        &:active {
+          fill: $adjective; color: $adjective;
+        }
+      }
+    }
+  }
+}
+

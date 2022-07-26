@@ -1,0 +1,56 @@
+@use "./comps/pallete.scss";
+
+.panele {
+
+  width: 100%; height: 100vh;
+  display: flex; flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+
+  overflow-y: auto; 
+  scroll-snap-type: x proximity;
+  margin: 0; padding: 0; border: 0;
+
+  color: pallete.$accent;
+  background-color: pallete.$theme;
+ 
+  .panel {
+
+    width: 100%; height: 100%; flex-shrink: 0; 
+    box-sizing: border-box; padding: 2em;
+    
+    overflow-y: auto; 
+
+    &.short {
+  
+      flex-flow: column; display: flex;
+      align-items: center;
+      &:first-child{ align-items: flex-end;}
+      &:last-child{ align-items: flex-start;}
+    }
+  
+  } @media (min-aspect-ratio: 3/4) {
+  
+    .panel { width: 68% }
+  
+  } @media (min-width: 64em) {
+  
+    .panel.short { width: 32% }
+  }
+
+  @import "./comps/html/typographics.scss";
+
+  @import "./comps/typographics.scss";
+  @import "./comps/pallete.scss";
+  @import "./comps/placeholder.scss";
+
+  @import "./comps/column.scss";
+  @import "./comps/row.scss";
+  @import "./comps/clickable.scss";
+  @import "./comps/scrollable.scss";
+  
+  @import "./anims/impl";
+
+  @import "./comps/card";
+  @import "./comps/timeline";
+}

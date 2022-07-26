@@ -1,0 +1,28 @@
+@use "./pallete";
+
+.timeline {
+
+  margin: 0; padding: 0; border: 0;
+  border-left: solid pallete.$adjective .5em;
+  overflow-x: scroll;
+
+  position: relative;
+
+  .label {
+
+    position: absolute; z-index: 2; left: 0;
+    padding-left: 1em; padding-right: .5em;
+    border-bottom: solid pallete.$adjective; 
+    border-right: solid pallete.$adjective;
+    border-bottom-right-radius: .5em;
+  }
+
+  .entry {
+
+    border: solid; margin: .5em;
+    padding: 1em; border-radius: 1em;
+  }
+}
+
+.light .timeline .label { background-color: pallete.$theme;}
+.dark .timeline .label { background-color: pallete.$accent;}

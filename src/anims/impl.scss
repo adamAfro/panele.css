@@ -1,0 +1,15 @@
+@import "./defs";
+
+/** ../comps/clickable */
+%clickable {
+
+  animation: popin .5s;
+}
+
+/** ../layouts/container */
+%content-box {
+
+  &.panel:first-child { animation: 1s lislide }
+  &.panel:last-child { animation: 1s rislide }
+  &:not(.panel) { animation: 1s fadein }
+}

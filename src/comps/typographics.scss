@@ -1,0 +1,77 @@
+@use "./pallete";
+
+$large: 2em;
+$big: 1.6em;
+$medium: 1.2em;
+$small: .8em;
+
+$mono: monospace;
+$headline: cursive;
+$readable: sans-serif;
+
+.sitename {
+
+  font-family: $headline;
+  font-size: $large;
+}
+
+@mixin title {
+  font-family: $readable;
+  font-size: $medium;
+} .title { @include title;}
+
+@mixin heading {
+  font-family: $headline;
+  font-size: $large;
+} .heading { @include heading;}
+
+@mixin mark {
+
+  background-color: pallete.$adjective;
+  color: pallete.$accent;
+  
+} .mark { @include mark;}
+
+@mixin quote {
+  
+  opacity: .8;
+  padding: .5em; border-radius: .5em;
+  background-color: pallete.$accent;
+  color: pallete.$theme;
+
+} .quote { @include quote;}
+
+@mixin code {
+
+  font-family: $mono;
+
+  color: white;
+  background-color: #0009;
+
+  margin: .1em;
+  padding: .1em .5em .2em .5em;
+  border-bottom-right-radius: .5em;
+} .code { @include code;}
+
+@mixin line {
+
+  box-sizing: border-box;
+  color: inherit;
+
+} .line { @include line;}
+
+@mixin medium { width: 100% }
+.medium { @include medium;}
+
+@mixin interactive {
+
+  font-size: 1em;
+  font-weight: normal;
+  font-family: inherit;
+  font-style: normal;
+  text-decoration: none;
+
+  color: inherit; background: 0;
+  margin: 0; padding: 0; border: 0;
+  list-style: none;
+} .interactive { @include interactive;}

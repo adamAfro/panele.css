@@ -1,0 +1,13 @@
+@use "./pallete";
+
+.placeholder {
+
+  padding: 1em;
+  
+  &:empty:before { 
+   
+    /** 3 horizontal dots */
+    content: ""; display: inline-block;
+    width: 6em; border-bottom: dotted 1em;
+  }
+}

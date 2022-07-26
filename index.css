@@ -1,0 +1,540 @@
+.light {
+  background-color: #ff8429;
+  color: #450000;
+}
+
+.dark {
+  background-color: #450000;
+  color: #ff8429;
+}
+
+.panele {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  overflow-y: auto;
+  scroll-snap-type: x proximity;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  color: #450000;
+  background-color: #ff8429;
+  /** ../comps/clickable */
+  /** ../layouts/container */
+}
+.panele .panel {
+  width: 100%;
+  height: 100%;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  padding: 2em;
+  overflow-y: auto;
+}
+.panele .panel.short {
+  flex-flow: column;
+  display: flex;
+  align-items: center;
+}
+.panele .panel.short:first-child {
+  align-items: flex-end;
+}
+.panele .panel.short:last-child {
+  align-items: flex-start;
+}
+@media (min-aspect-ratio: 3/4) {
+  .panele .panel {
+    width: 68%;
+  }
+}
+@media (min-width: 64em) {
+  .panele .panel.short {
+    width: 32%;
+  }
+}
+.panele .light {
+  background-color: #ff8429;
+  color: #450000;
+}
+.panele .dark {
+  background-color: #450000;
+  color: #ff8429;
+}
+.panele .sitename {
+  font-family: cursive;
+  font-size: 2em;
+}
+.panele .title {
+  font-family: sans-serif;
+  font-size: 1.2em;
+}
+.panele .heading {
+  font-family: cursive;
+  font-size: 2em;
+}
+.panele .mark {
+  background-color: #fc4700;
+  color: #450000;
+}
+.panele .quote {
+  opacity: 0.8;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  background-color: #450000;
+  color: #ff8429;
+}
+.panele .code {
+  font-family: monospace;
+  color: white;
+  background-color: #0009;
+  margin: 0.1em;
+  padding: 0.1em 0.5em 0.2em 0.5em;
+  border-bottom-right-radius: 0.5em;
+}
+.panele .line, .panele .chain {
+  box-sizing: border-box;
+  color: inherit;
+}
+.panele .medium {
+  width: 100%;
+}
+.panele .interactive {
+  font-size: 1em;
+  font-weight: normal;
+  font-family: inherit;
+  font-style: normal;
+  text-decoration: none;
+  color: inherit;
+  background: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+}
+.panele h1 {
+  font-family: sans-serif;
+  font-size: 1.2em;
+}
+.panele h2,
+.panele h3,
+.panele h4,
+.panele h5,
+.panele h6 {
+  font-family: cursive;
+  font-size: 2em;
+}
+.panele h2 {
+  font-size: 2em;
+}
+.panele h3 {
+  font-size: 1.6em;
+}
+.panele h4 {
+  font-size: 1.2em;
+}
+.panele blockquote {
+  opacity: 0.8;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  background-color: #450000;
+  color: #ff8429;
+}
+.panele code {
+  font-family: monospace;
+  color: white;
+  background-color: #0009;
+  margin: 0.1em;
+  padding: 0.1em 0.5em 0.2em 0.5em;
+  border-bottom-right-radius: 0.5em;
+}
+.panele mark {
+  background-color: #fc4700;
+  color: #450000;
+}
+.panele hr {
+  box-sizing: border-box;
+  color: inherit;
+}
+.panele img, .panele picture, .panele source {
+  width: 100%;
+}
+.panele a, .panele button, .panele input {
+  font-size: 1em;
+  font-weight: normal;
+  font-family: inherit;
+  font-style: normal;
+  text-decoration: none;
+  color: inherit;
+  background: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+}
+.panele a {
+  text-decoration: underline;
+}
+.panele .light {
+  background-color: #ff8429;
+  color: #450000;
+}
+.panele .dark {
+  background-color: #450000;
+  color: #ff8429;
+}
+.panele .sitename {
+  font-family: cursive;
+  font-size: 2em;
+}
+.panele .title {
+  font-family: sans-serif;
+  font-size: 1.2em;
+}
+.panele .heading {
+  font-family: cursive;
+  font-size: 2em;
+}
+.panele .mark {
+  background-color: #fc4700;
+  color: #450000;
+}
+.panele .quote {
+  opacity: 0.8;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  background-color: #450000;
+  color: #ff8429;
+}
+.panele .code {
+  font-family: monospace;
+  color: white;
+  background-color: #0009;
+  margin: 0.1em;
+  padding: 0.1em 0.5em 0.2em 0.5em;
+  border-bottom-right-radius: 0.5em;
+}
+.panele .line, .panele .chain {
+  box-sizing: border-box;
+  color: inherit;
+}
+.panele .medium {
+  width: 100%;
+}
+.panele .interactive {
+  font-size: 1em;
+  font-weight: normal;
+  font-family: inherit;
+  font-style: normal;
+  text-decoration: none;
+  color: inherit;
+  background: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+}
+.panele .light {
+  background-color: #ff8429;
+  color: #450000;
+}
+.panele .dark {
+  background-color: #450000;
+  color: #ff8429;
+}
+.panele .light {
+  background-color: #ff8429;
+  color: #450000;
+}
+.panele .dark {
+  background-color: #450000;
+  color: #ff8429;
+}
+.panele .placeholder {
+  padding: 1em;
+}
+.panele .placeholder:empty:before {
+  /** 3 horizontal dots */
+  content: "";
+  display: inline-block;
+  width: 6em;
+  border-bottom: dotted 1em;
+}
+.panele .column, .panele .stalagnate, .panele .stock {
+  display: flex;
+  flex-direction: column;
+}
+.panele .stock {
+  justify-content: center;
+  align-items: center;
+}
+.panele .stalagnate {
+  justify-content: space-between;
+  height: 100%;
+}
+.panele .row, .panele .line, .panele .chain, .panele .queue, .panele .cork {
+  display: flex;
+  flex-flow: wrap row;
+}
+.panele .queue, .panele .cork {
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.panele .cork {
+  justify-content: center;
+}
+.panele .line, .panele .chain {
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.panele .chain {
+  align-items: center;
+}
+.panele .light {
+  background-color: #ff8429;
+  color: #450000;
+}
+.panele .dark {
+  background-color: #450000;
+  color: #ff8429;
+}
+.panele .clickable, .panele .button, .panele .icon {
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.panele .clickable:hover, .panele .button:hover, .panele .icon:hover {
+  transform: scale(1.1);
+  transition: transform 0.5s, color 0.5s, background-color 0.5s;
+}
+.panele .clickable:focus, .panele .button:focus, .panele .icon:focus {
+  transition: transform 0.5s, color 0.5s, background-color 0.5s, fill 0.5s;
+}
+.panele .dark .clickable, .panele .dark .button, .panele .dark .icon {
+  fill: #ff8429;
+  color: #ff8429;
+}
+.panele .dark .clickable:active, .panele .dark .button:active, .panele .dark .icon:active {
+  fill: #fc4700;
+  color: #fc4700;
+}
+.panele .light .clickable, .panele .light .button, .panele .light .icon {
+  fill: #450000;
+  color: #450000;
+}
+.panele .light .clickable:active, .panele .light .button:active, .panele .light .icon:active {
+  fill: #fc4700;
+  color: #fc4700;
+}
+.panele .icon {
+  background-size: contain;
+  width: 1em;
+  height: 1em;
+  line-height: 0;
+  padding: 0.25em;
+}
+.panele .icon.medium {
+  font-size: 3em;
+}
+.panele .icon.big {
+  font-size: 5em;
+}
+.panele .icon.large {
+  font-size: 6em;
+}
+.panele .icon:focus {
+  transform: rotate(0.1rad);
+}
+.panele .button {
+  background-size: 68%;
+  padding: 0.5em;
+  line-height: 1.5em;
+  border-radius: 0.8em;
+  min-height: 1.5em;
+}
+.panele .button.text {
+  min-width: 6em;
+}
+.panele .button.char {
+  width: 1.5em;
+}
+.panele .button.char:focus {
+  transform: rotate(0.1rad);
+}
+.panele .dark .button {
+  color: #450000;
+  background-color: #ff8429;
+}
+.panele .dark .button:active {
+  color: #ff8429;
+  background-color: #fc4700;
+}
+.panele .light .button {
+  color: #ff8429;
+  background-color: #450000;
+}
+.panele .light .button:active {
+  color: #450000;
+  background-color: #fc4700;
+}
+.panele .light {
+  background-color: #ff8429;
+  color: #450000;
+}
+.panele .dark {
+  background-color: #450000;
+  color: #ff8429;
+}
+.panele .scroller > *, .panele .slider > * {
+  flex-shrink: 0;
+  scroll-snap-align: center;
+}
+.panele .slider {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100%;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  border-left: solid #fc4700;
+  border-right: solid #fc4700;
+}
+.panele .scroller {
+  display: flex;
+  flex-flow: column nowrap;
+  height: 100%;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  border-top: solid #fc4700;
+  border-bottom: solid #fc4700;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes popin {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  70% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@keyframes rislide {
+  from {
+    transform: translateX(100vw);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes lislide {
+  from {
+    transform: translateX(-100vw);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes dislide {
+  from {
+    transform: translateY(-100vh);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@keyframes upslide {
+  from {
+    transform: translateY(100vh);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.panele .light {
+  background-color: #ff8429;
+  color: #450000;
+}
+.panele .dark {
+  background-color: #450000;
+  color: #ff8429;
+}
+.panele .card {
+  font-size: 180%;
+  width: 5cm;
+  height: 9cm;
+  box-sizing: content-box;
+  padding: 1cm;
+  border-radius: 1cm;
+  border: solid;
+  box-shadow: 0.5cm 0.5cm #fc4700;
+  margin: 0.5cm;
+}
+.panele .card.tiny {
+  font-size: 100%;
+  width: 2.5cm;
+  height: 4.5cm;
+  padding: 0.5cm;
+  border-radius: 0.5cm;
+  border: solid;
+  box-shadow: 0.25cm 0.25cm #fc4700;
+  margin: 0.25cm;
+}
+.panele .light {
+  background-color: #ff8429;
+  color: #450000;
+}
+.panele .dark {
+  background-color: #450000;
+  color: #ff8429;
+}
+.panele .timeline {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-left: solid #fc4700 0.5em;
+  overflow-x: scroll;
+  position: relative;
+}
+.panele .timeline .label {
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  padding-left: 1em;
+  padding-right: 0.5em;
+  border-bottom: solid #fc4700;
+  border-right: solid #fc4700;
+  border-bottom-right-radius: 0.5em;
+}
+.panele .timeline .entry {
+  border: solid;
+  margin: 0.5em;
+  padding: 1em;
+  border-radius: 1em;
+}
+.panele .light .timeline .label {
+  background-color: #ff8429;
+}
+.panele .dark .timeline .label {
+  background-color: #450000;
+}
+
+/*# sourceMappingURL=index.css.map */

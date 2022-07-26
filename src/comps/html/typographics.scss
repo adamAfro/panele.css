@@ -1,0 +1,24 @@
+@use "../typographics";
+
+h1 { @include typographics.title;}
+h2,
+h3,
+h4,
+h5,
+h6 { @include typographics.heading;}
+
+h2 { font-size: typographics.$large;}
+h3 { font-size: typographics.$big;}
+h4 { font-size: typographics.$medium;}
+
+blockquote { @include typographics.quote;}
+code { @include typographics.code;}
+
+mark { @include typographics.mark;}
+
+hr { @include typographics.line;}
+
+img, picture, source { @include typographics.medium}
+
+a, button, input { @include typographics.interactive} 
+a { text-decoration: underline;}

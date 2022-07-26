@@ -1,0 +1,35 @@
+.row {
+
+  display: flex;
+  flex-flow: wrap row;
+}
+
+.queue {
+
+  @extend .row;
+
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.cork {
+
+  @extend .queue;
+
+  justify-content: center;
+}
+
+.line {
+
+  @extend .row;
+
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.chain {
+
+  @extend .line;
+
+  align-items: center;
+}
